@@ -5,7 +5,7 @@
 - `/bin` - Contains Bitnet binaries, built and imported from the main source code.
 - `/build` - Folder that houses the built/production version of the program.
 - `/gui` - Contains the Graphic User Interface files.
-- `/gui/linuix` - Contains the GUI files for the Linux interface.
+- `/gui/linux` - Contains the GUI files for the Linux interface.
 - `/gui/mac` - Contains the GUI files for the Mac interface.
 - `/gui/win` - Contains the GUI files for the Windows interface.
 - `/scripts` - Contains source code scripts to build and run the application.
