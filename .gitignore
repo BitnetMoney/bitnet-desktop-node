@@ -1,0 +1,8 @@
+# Build Files
+/build/win/
+/build/linux/
+/build/macos/
+
+# Temporary
+
+/gui/win/BitnetNode.exe
