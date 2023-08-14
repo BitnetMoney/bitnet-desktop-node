@@ -1,5 +1,7 @@
 # Bitnet Desktop Node
 
+Bitnet Desktop Node is a user-friendly software that allows technical and non-technical users to run a node and mine Bitnet with any household computer. The goal with this software is to lower the barrier to entry to Bitnet while facilitating node management tasks for more experienced users.
+
 ## Minimum Requirements
 
 - Dual-Core CPU or Equivalent (Quad-Core+ CPU Recommended)
@@ -9,9 +11,9 @@
 
 ## How To Build From Source
 
-### Windows
+### Microsoft Windows
 
-[<img alt="win64" width="420px" src="/img/desktop-node-win64.png" />](#)
+[<img alt="win64" width="420px" src="/img/desktop-node-win64.png" />](https://github.com/BitnetMoney/bitnet-desktop-node/blob/a26ee3fb6fe728f2c95a24707121bdfd8295e479/img/desktop-node-win64.png)
 
 Copy the repository by downloading it directly from Github or running the command below:
 
