@@ -1,17 +1,60 @@
 # Bitnet Desktop Node
 
-## Repository Structure
+## Minimum Requirements
+
+- Dual-Core CPU or Equivalent (Quad-Core+ CPU Recommended)
+- 2GB RAM (4GB+ RAM Recommended)
+- 200Mb Storage for Desktop Node
+- 10GB+ Storage for Database Recommended
+
+## How To Build From Source
+
+### Windows
+
+[<img alt="win64" width="420px" src="/img/desktop-node-win64.png" />](#)
+
+Copy the repository by downloading it directly from Github or running the command below:
+
+```cmd
+git clone https://github.com/BitnetMoney/bitnet-desktop-node
+```
+
+Navigate to the /bitnet-desktop-node/script folder by clicking on it or running:
+
+```cmd
+cd bitnet-desktop-node/script
+```
+
+Now just execute the building script by clicking on it or running:
+
+```cmd
+.\build
+```
+
+After the build is complete, the script will open your build folder, or you can access it using:
+
+```cmd
+cd ..\build\win
+```
+
+*Linux and MacOS GUIs are still being developed.*
+
+## How To Contribute
+
+### Repository Structure
 
 - `/bin` - Contains Bitnet binaries, built and imported from the main source code.
 - `/build` - Folder that houses the built/production version of the program.
 - `/gui` - Contains the Graphic User Interface files.
 - `/gui/linux` - Contains the GUI files for the Linux interface.
-- `/gui/mac` - Contains the GUI files for the Mac interface.
+- `/gui/mac` - Contains the GUI files for the MacOS interface.
 - `/gui/win` - Contains the GUI files for the Windows interface.
 - `/scripts` - Contains source code scripts to build and run the application.
+- `/settings` - Houses all SET files that are used by the GUI to define settings.
 - `/shell` - Contains all application shell binaries and scripts.
-
-## How To Contribute
+- `/shell/linux` - Contains the shell files for Linux.
+- `/shell/mac` - Contains the Shell files for MacOS.
+- `/shell/win` - Contains the shell files for Windows.
 
 ### GUI Contributions
 
