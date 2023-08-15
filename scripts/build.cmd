@@ -62,6 +62,8 @@ goto BuildScript
     Copying settings...
     :: Copies the entire /settings folder into the build folder.
         xcopy /e /h /c /i ..\settings ..\build\win\settings
+    :: Removes unused files from the /settings folder.
+        del /f /q ..\build\win\settings\readme.md
 
 :: Step 6
     %step%
