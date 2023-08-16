@@ -74,10 +74,10 @@ You can submit any other contributions by forking the repository and creating a 
 
 1. Any functions in your code need to be commented.
 2. All comments need to be clear to read and in English.
-3. The more comments the better, and if the mergers think it's too much, all the work that is is to delete a few lines, to please feel free to comment as much as you want.
+3. The more comments the better.
 4. Always that it is possible, PRs should be made in the same programming language as the underlying code being edited.
 5. Avoid binaries, and if that is not possible, submit the source code for verification with your PR.
-6. Make sure your code is well-formatted and organised.
+6. Make sure your code is well-formatted and organized.
 7. Avoid using out-of-date expressions and functions.
 8. If your alterations will require any dependency to work, you need to submit those with your PR, clearly stating that the dependency is not of your own authorying - if that's the case - and declaring any copyright terms and licences that may apply.
 9. Make sure you have updated any building or running scripts on `/scripts` to account for any new files being added to the source code.

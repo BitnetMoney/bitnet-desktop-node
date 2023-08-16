@@ -2,11 +2,15 @@
 
 ## Linux
 
-Not Available
+```bash
+bash build.sh
+```
 
 ## Apple MacOS
 
-Not Available
+```bash
+bash build.sh
+```
 
 ## Microsoft Windows
 
