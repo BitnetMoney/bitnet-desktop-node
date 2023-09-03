@@ -31,8 +31,9 @@ goto BuildScript
     echo [##                  ] 10/100
     echo.
     echo Creating build folder...
-    :: Creates the destination folder for the build.
+    :: Creates the destination folder for the build and the temp folder.
         mkdir ..\build\win
+        mkdir ..\build\win\temp
 
 :: Step 3
     %step%
