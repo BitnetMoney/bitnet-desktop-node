@@ -255,7 +255,7 @@ if /i %debug% == on (
         
     :StartNode
         :: starts the node
-        .\bitnet --networkid 210 --config ..\settings\bootnodes.list %globalFlags%
+        .\bitnet --datadir bitnet.db --networkid 210 --config ..\settings\bootnodes.list %globalFlags%
 
 :ErrorCatcher
     :: pause to display errors and exit
