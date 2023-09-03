@@ -1,83 +1,84 @@
 # Bitnet Desktop Node
 
-Bitnet Desktop Node is a user-friendly software that allows technical and non-technical users to run a node and mine Bitnet with any household computer. The goal with this software is to lower the barrier to entry to Bitnet while facilitating node management tasks for more experienced users.
+Bitnet Desktop Node is user-friendly software that enables both technical and non-technical users to run a node and mine Bitnet using any household computer. The software aims to make it easier for beginners to get started with Bitnet, while also simplifying node management tasks for more seasoned users.
 
 ## Minimum Requirements
 
-- Dual-Core CPU or Equivalent (Quad-Core+ CPU Recommended)
-- 2GB RAM (4GB+ RAM Recommended)
-- 200Mb Storage for Desktop Node
-- 10GB+ Storage for Database Recommended
+- Dual-Core CPU or Equivalent (Quad-Core CPU Recommended)
+- 2GB RAM (4GB or More Recommended)
+- 200MB Storage for Desktop Node
+- 10GB or More Storage for Database (Recommended)
 
-## How To Build From Source
+## How to Build from Source
 
 ### Microsoft Windows
 
 [<img alt="win64" width="420px" src="/img/desktop-node-win64.png" />](https://github.com/BitnetMoney/bitnet-desktop-node/blob/a26ee3fb6fe728f2c95a24707121bdfd8295e479/img/desktop-node-win64.png)
 
-Copy the repository by downloading it directly from Github or running the command below:
+Clone the repository either by downloading it directly from Github or by executing the following command:
 
 ```cmd
 git clone https://github.com/BitnetMoney/bitnet-desktop-node
 ```
 
-Navigate to the /bitnet-desktop-node/script folder by clicking on it or running:
+Navigate to the `/bitnet-desktop-node/script` folder either by clicking on it or by executing:
 
 ```cmd
 cd bitnet-desktop-node/script
 ```
 
-Now just execute the building script by clicking on it or running:
+Execute the build script either by clicking on it or by running:
 
 ```cmd
 .\build
 ```
 
-After the build is complete, the script will open your build folder, or you can access it using:
+Once the build is complete, the script will automatically open the build folder. Alternatively, you can access it manually with:
 
 ```cmd
 cd ..\build\win
 ```
 
-*Linux and MacOS GUIs are still being developed.*
+*Note: Linux and MacOS GUIs are currently under development.*
 
-## How To Contribute
+## How to Contribute
 
 ### Repository Structure
 
-- `/bin` - Contains Bitnet binaries, built and imported from the main source code.
-- `/build` - Folder that houses the built/production version of the program.
-- `/gui` - Contains the Graphic User Interface files.
-- `/gui/linux` - Contains the GUI files for the Linux interface.
-- `/gui/mac` - Contains the GUI files for the MacOS interface.
-- `/gui/win` - Contains the GUI files for the Windows interface.
-- `/scripts` - Contains source code scripts to build and run the application.
-- `/settings` - Houses all SET files that are used by the GUI to define settings.
-- `/shell` - Contains all application shell binaries and scripts.
-- `/shell/linux` - Contains the shell files for Linux.
-- `/shell/mac` - Contains the Shell files for MacOS.
-- `/shell/win` - Contains the shell files for Windows.
+- `/bin` - Contains the Bitnet binaries, either built or imported from the main source code.
+- `/build` - Stores the built or production versions of the software.
+- `/gui` - Houses the Graphic User Interface files.
+    - `/gui/linux` - Contains the Linux GUI files.
+    - `/gui/mac` - Contains the MacOS GUI files.
+    - `/gui/win` - Contains the Windows GUI files.
+- `/scripts` - Contains scripts for building and running the application.
+- `/settings` - Stores all SET files used by the GUI to define settings.
+    - `/settings/defaults` - Contains the default SET files.
+- `/shell` - Holds all application shell binaries and scripts.
+    - `/shell/linux` - Contains the Linux shell files.
+    - `/shell/mac` - Contains the MacOS shell files.
+    - `/shell/win` - Contains the Windows shell files.
 
 ### GUI Contributions
 
-If you want to contribute to the GUI of the software, please follow the guidelines below:
+If you're interested in contributing to the software's GUI, please adhere to the guidelines below:
 
-- Currently the Windows interface is being built in Delphi, Visual Basic, Batchfile Scripting (CMD), and C++, so any contributions will need to be done in either of those languages.
-- For Linux and Mac the Python language is being used, so any contributions will need to be submitted in Python.
-- If you are proposing a fully new GUI, it can be in any language, but any Pull Requests with files being deleted will be throughly reviewed before any merging, and languages that are unknown or not utilized by the majority of the contributors might be declined so we don't hinder or disrrupt future contributions from the community. The preference will always be to merge additions and alterations rather than a full wipeout of previous versions of the GUIs.
+- The Windows interface is currently being developed in Delphi, Visual Basic, Batchfile Scripting (CMD), and C++. Contributions should be in one of these languages.
+- For Linux and Mac, the Python language is being utilized. Therefore, contributions should be submitted in Python.
+- If you are proposing an entirely new GUI, you may use any language. However, pull requests that delete existing files will undergo thorough review before merging. Contributions in languages unfamiliar to or seldom used by the community may be declined to prevent hindering future contributions. The preference is to merge additions and modifications rather than replace existing versions of the GUIs.
 
 ### Other Contributions
 
-You can submit any other contributions by forking the repository and creating a Pull Request on Github. Make sure that any binaries being submitted are accompanied by their respective sources, otherwise your request will not be accepted.
+For other types of contributions, please fork the repository and create a Pull Request on Github. Ensure that any submitted binaries include their corresponding source code; otherwise, your request will not be approved.
 
 ### General Guidelines
 
-- Any functions in your code need to be commented.
-- All comments need to be clear to read and in English.
-- The more comments the better.
-- Always that it is possible, PRs should be made in the same programming language as the underlying code being edited.
-- Avoid binaries, and if that is not possible, submit the source code for verification with your PR.
-- Make sure your code is well-formatted and organized.
-- Avoid using out-of-date expressions and functions.
-- If your alterations will require any dependency to work, you need to submit those with your PR, clearly stating that the dependency is not of your own authorying - if that's the case - and declaring any copyright terms and licences that may apply.
-- Make sure you have updated any building or running scripts on `/scripts` to account for any new files being added to the source code.
+- Comment all functions in your code.
+- Ensure comments are easily readable and written in English.
+- The more comments, the better.
+- Whenever possible, PRs should be in the same programming language as the existing code being modified.
+- Avoid submitting binaries without their source code for verification.
+- Your code should be well-formatted and organized.
+- Steer clear of using outdated expressions and functions.
+- If your changes require any dependencies, include those with your PR. Clearly state if you are not the author of the dependency and provide any relevant copyright terms and licenses.
+- Update any build or run scripts in the `/scripts` folder to account for new files added to the source code.
