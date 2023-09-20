@@ -1,6 +1,6 @@
 #!/bin/bash
 # macos
-# node starter script
+# jsconsole script
 #
 # Copyright 2023 Bitnet
 # This file is part of the Bitnet library.
@@ -14,22 +14,9 @@
 # from, out of or in connection with the software or the use or
 # other dealings in the software.
 
-# Imports
-# imports
-read -r extraFlags < ../settings/node_extraFlags.set
-
-# NodeStarter
-# starts the node with the default plus extra flags,
-# and .config settings
-
-# InitGenesis
-# initiates the genesis file
-echo "Initiating mainnet genesis..."
-./bitnet --datadir bitnet.db init .bitnet
-
-# StartNode
-# starts the node
-./bitnet --networkid 210 --config .config "$extraFlags"
+# StartConsole
+# starts console using Bitnet
+./bin/bitnet attach ./bitnet.db/bitnet
 
 # ErrorCatcher
 # pause to display errors and exit

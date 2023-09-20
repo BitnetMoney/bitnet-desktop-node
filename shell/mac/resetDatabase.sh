@@ -1,6 +1,6 @@
 #!/bin/bash
-# linux
-# node starter script
+# macos
+# reset database script
 #
 # Copyright 2023 Bitnet
 # This file is part of the Bitnet library.
@@ -14,23 +14,13 @@
 # from, out of or in connection with the software or the use or
 # other dealings in the software.
 
-# Imports
-# imports
-read -r extraFlags < ../settings/node_extraFlags.set
+# ClearDb
+# removes old database directory
+rm -rf ./bin/bitnet.db
 
-# NodeStarter
-# starts the node with the default plus extra flags,
-# and .config settings
-
-# InitGenesis
-# initiates the genesis file
-echo "Initiating mainnet genesis..."
-./bitnet --datadir bitnet.db init .bitnet
-
-# StartNode
-# starts the node
-./bitnet --networkid 210 --config .config "$extraFlags"
-
-# ErrorCatcher
-# pause to display errors and exit
-read -p "Press Enter to continue..."
+# CleanAndExit
+# clear screen
+clear
+# display end message
+echo "Operation finalized. Press Enter to exit."
+read -r
